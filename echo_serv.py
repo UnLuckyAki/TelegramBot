@@ -304,6 +304,5 @@ def send_welcome(message):
 
 
 while True:
-    parser()
     bot.polling()
     schedule.every().day.at("10:30").do(parser())
